@@ -10,5 +10,12 @@ public class Program
         double j = float.Parse(Console.ReadLine());
         double k = float.Parse(Console.ReadLine());
         penjumlahan.JumlahTigaAngka<double>(i,j,k);
+
+        SimpleDataBase<double> simpleData = new SimpleDataBase<double>();
+        simpleData.AddNewData(i);
+        simpleData.AddNewData(j);
+        simpleData.AddNewData(k);
+        simpleData.PrintAllData();
+
     }
 }
